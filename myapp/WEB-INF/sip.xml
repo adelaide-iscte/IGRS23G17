@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sip-app>        
+	<app-name>myapp</app-name>
+        <display-name>SIP IGRS application</display-name>
+	<description>SIP IGRS application</description>
+	
+	<servlet-selection>
+		<main-servlet>
+			myapp
+		</main-servlet>
+	</servlet-selection>
+
+	<servlet>
+		<servlet-name>myapp</servlet-name>
+		<display-name>myapp</display-name>
+		<description>SIP IGRS application</description>
+		<servlet-class>
+			org.mobicents.servlet.sip.example.Myapp
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+</sip-app>
+
